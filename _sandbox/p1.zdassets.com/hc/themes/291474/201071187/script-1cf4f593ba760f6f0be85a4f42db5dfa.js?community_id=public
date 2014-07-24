@@ -60,7 +60,7 @@ $('.topic').each(function(i, obj) {
 //Creating Forum Banner
 var parent1 = document.getElementsByClassName('community-sub-nav')[0];
 var parent2 = document.getElementsByClassName('topic-list')[0];
-$("<a href='/hc/communities/public/topics/200106188-Product-Updates' id='forum-link'><div id='forum-div'><img id='forum-img' src='//p1.zdassets.com/hc/theme_assets/291474/200000713/boxworks1.png'/></div></a>").insertBefore(parent2);
+$("<a href='/hc/communities/public/topics/200106188-Product-Updates' id='forum-link'><div id='forum-div'><img id='forum-img' src='../../../../p1.zdassets.com/hc/theme_assets/291474/200000713/boxworks1.png'/></div></a>").insertBefore(parent2);
 var forumDiv = document.getElementById('forum-div');
 var forumImg = document.getElementById('forum-img');
 
