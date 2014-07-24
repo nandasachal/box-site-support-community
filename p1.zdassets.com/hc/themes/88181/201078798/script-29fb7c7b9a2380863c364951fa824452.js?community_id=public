@@ -1,0 +1,156 @@
+/*
+ * jQuery v1.9.1 included
+ */
+
+$(document).ready(function() {
+
+// GA on search field added by TBerry 
+ $('form[role="search"]').on('submit', function() {
+var $this, query; 
+$this = $(this);
+query = $this.find('input[type="search"]').val().toLowerCase();
+_gaq.push(['_trackEvent', 'search', 'submit', query]);
+});
+
+// GA on submit ticket button added by Sachal 
+ $("input[name=commit]").click(function() {
+ var form_id = location.search.split('ticket_form_id=')[1];
+ console.log(form_id);
+_gaq.push(['_trackEvent', 'WebApp', 'Submit', form_id]);
+});
+// End of GA for search field and submit button
+
+//checkLogin(); Moved lower improve performnance of left-hand nav menu
+
+  // Wrappers for styling
+  $("#sidescroll-container, main").wrapAll("<div id='sidescroll-and-main-container'></div>");
+  $("main").wrap("<div id='main-wrapper'></div>");
+
+  // Javascript for Sidescroll Menu UI 
+  defaultWidth  = 247; //pixels
+  transition    = 300; //millisecond
+
+  function resetMargin(width) {
+    divLeftMargin = 0;
+    $('.additional-block').each(function() {
+      thisLeftMargin  = divLeftMargin + 'px';
+      $(this).css('margin-left', thisLeftMargin);
+      divLeftMargin = divLeftMargin + width;
+    });
+  } 
+  
+  resetMargin(defaultWidth);
+
+  function showChildMenu(link) {
+    selectedDiv       = $(link).attr('href');
+    selectedMargin    = $(selectedDiv).css('margin-left');
+    selectedParent    = $(link).parents('.additional-block');
+    sliderMargin    = $('.slider').css('margin-left');
+    slidingMargin   = (parseInt(sliderMargin) - defaultWidth) + 'px';
+
+    if(selectedMargin.length > 0) {
+      $(selectedDiv).children('.header').append('<span class="back">Back</span>').bind('click', function () {
+        selectedParent  = $(this).parents('.additional-block');
+        sliderMargin  = - (parseInt(selectedParent.css('margin-left')) - defaultWidth) + 'px';
+        $(".slider").animate( { marginLeft: sliderMargin }, "transition", function() { 
+          $(selectedParent).find(".back").remove();
+        })
+      });
+      
+      if((parseInt(selectedMargin) - defaultWidth) >= defaultWidth) {
+        selectedParent.after($(selectedDiv));
+        resetMargin(defaultWidth);
+      $('.slider').animate({marginLeft: slidingMargin}, transition);
+      } else {
+      $('.slider').animate({marginLeft: slidingMargin}, transition);
+      }
+    }
+  }
+
+  function showArticle(article_link) {
+    var article_path = $(article_link).attr("data") + " article.main-column";
+    $.get(article_path, function(article_page) {
+      var article = $(article_page).find("article.main-column"); 
+      $("main").html(article);
+    });
+  }
+  
+  function listArticles(list_link) {
+    
+    //var pathComponents = this.document.location.pathname.split("/");
+    //var articles_path = pathComponents[0] + "/" + pathComponents[1] + "/" + pathComponents[2] + $(list_link).data("articles");
+    var articles_path = "/hc" + $(list_link).data("articles");
+    // console.log(articles_path);
+              
+    $.get(articles_path, function(articles_page) {
+      // Wrap the html string response up in a div so jQuery can recognize the response as html and do like, you know, stuff.
+      var parsedResponse = $("<div/>").append(articles_page).find("main");
+      $("main").first("div").html(parsedResponse);
+    }).done(function() {
+      //console.log("done");
+    })
+    .fail(function() {
+      //console.log("there was an error");
+    })
+    .always(function() {
+      //console.log("clean up");
+    });
+  }
+  
+  // This function is used to add an arrow to those subnavs that have additional menus.  In other words 
+  // when the slider nav has menu nesting greater than 1 level deep.  
+  $('.menu a').each(function() {
+    thisHref  = $(this).attr('href');
+    if($(thisHref).length > 0) {
+      $(this).addClass('has-child');
+    }
+  });
+
+  $('.menu a').click(function(event) {
+    event.preventDefault();
+    if (typeof ($(this).attr('class')) !== 'undefined')
+      showChildMenu($(this));
+    else {
+      listArticles($(this));
+    }
+  });
+  // End of Sidescroll UI Javascript 
+
+
+//Nic's Code to fix side Nav
+$(".slider").show();
+
+  // social share popups
+  $(".share a").click(function(e) {
+    e.preventDefault();
+    window.open(this.href, "", "height = 500, width = 500");
+  });
+
+  // toggle the share dropdown in communities
+  $(".share-label").on("click", function(e) {
+    e.stopPropagation();
+    var isSelected = this.getAttribute("aria-selected") == "true";
+    this.setAttribute("aria-selected", !isSelected);
+    $(".share-label").not(this).attr("aria-selected", "false");
+  });
+
+  $(document).on("click", function() {
+    $(".share-label").attr("aria-selected", "false");
+  });
+
+  // show form controls when the textarea receives focus
+  $(".answer-body textarea").one("focus", function() {
+    $(".answer-form-controls").show();
+  });
+
+  $(".comment-container textarea").one("focus", function() {
+    $(".comment-form-controls").show();
+  });
+
+//adding js to hide the articles showing in each section after the third article - per support ticket with zendesk that maria sent
+//$('ul.article-list li:nth-child(3)').nextAll().hide();
+
+
+// Initialize web callback function
+//initializeCallback();
+});
