@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <!-- v4195 -->
+  <title>Box Support Sandbox</title>
+
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="CKZ3PfNvT40dNBK3GT4hW/9ICTLKL0nX4EvjCavERTw=" name="csrf-token" />
+  
+
+  
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link href="//p1.zdassets.com/hc/assets/application-8b05828322d00904ed78c6185939872d.css" id="stylesheet" media="all" rel="stylesheet" type="text/css" />
+  <link href="//p1.zdassets.com/hc/themes/291474/201071187/style-1cf4f593ba760f6f0be85a4f42db5dfa.css?community_id=public" rel="stylesheet" type="text/css"></link>
+  <link href="//p1.zdassets.com/hc/assets/favicon-687ecb92258a7ac20eb97f7258ecba2c.ico" rel="shortcut icon" type="image/png"></link>
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="//p1.zdassets.com/hc/assets/jquery-5a08650d795ef9efafdc55c72fab5e6d.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-292868-48']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  
+  
+
+  
+
+  <!-- add code here that should appear in the document head -->
+<script src="https://zendesk.tv/conditional_fields/helpcenter.js"></script>
+<script>var cfaRules = [{"fieldType":"tagger","field":22850263,"value":"box_edit","select":[23517997,22628437,22628447,22850243,22862577,22864976],"formId":4467},{"fieldType":"tagger","field":22850263,"value":"box_for_outlook","select":[23519308,22628437,22628447,22850243,22862577,22864976],"formId":4467},{"fieldType":"tagger","field":22850263,"value":"box_sync","select":[23519298,22628437,22628447,22850243,22862577,22864976],"formId":4467},{"fieldType":"tagger","field":22850263,"value":"box_sync","select":[22850243],"formId":43823}];</script>
+
+  <script src="//p1.zdassets.com/hc/themes/291474/201071187/script-1cf4f593ba760f6f0be85a4f42db5dfa.js?community_id=public" type="text/javascript"></script>
+</head>
+<body class="community-enabled">
+
+
+      
+
+
+  <header class="header">
+  <div class="header-inner">
+    <div class="logo">
+    <a href="/hc?community_id=public" title="Home"><img alt="Logo" src="//p1.zdassets.com/hc/settings_assets/291474/200000713/x3PPt3Ojldq0PfH7MZnMrA-box-help-logo.png" /></a>
+  </div>
+    <!--<h2 id="search_pretext">How can we help you?</h2>-->
+    <form accept-charset="UTF-8" action="/hc/en-us/search?community_id=public" class="search-small" method="get" role="search"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input id="query" name="query" placeholder="Search" type="search" />
+</form> 
+  </div>
+</header>
+<div class="subheader">
+  <nav class="user-nav">
+    
+<a href="/access/login?theme=hc&amp;hc=true&amp;force_unaltered_return_to=true&amp;return_to=https%3A%2F%2Fbox1367876785.zendesk.com%2Fhc%2Fcommunities%2Fpublic%2Ftopics&amp;locale=1" class="login" data-sso-action="signin" role="button">Sign in</a>
+
+    <a href="/hc/requests/new?community_id=public" class="submit-a-request">Submit a request</a>
+    <a href="https://app.box.com/help/login?locale_id=1&return_to=%2Fhc%2Fen-us" class="submit-a-request logged-out">Please login to submit a request</a>
+    <div class="dropdown language-selector">
+  <a class="dropdown-toggle">English (US)</a>
+  <ul class="dropdown-panel dropdown-menu pull-right"><li dir="ltr"><a href="/hc/change_language/fr?community_id=public&amp;return_to=%2Fhc%2Fcommunities%2Fpublic%2Ftopics">Français</a></li>
+
+<li dir="ltr"><a href="/hc/change_language/ja?community_id=public&amp;return_to=%2Fhc%2Fcommunities%2Fpublic%2Ftopics">日本語</a></li>
+</ul>
+</div>
+
+  <div class="dropdown" style="float:right;padding-right:15px;" id="call_us">
+  <a class="dropdown-toggle">Need to call us?</a>
+  <ul class="dropdown-panel dropdown-menu pull-right">
+    <li id="number" > <a href="https://app.box.com/help/login?locale_id=1&return_to=%2Fhc%2Fen-us">Please login</a></li>
+    <li id="UK">UK:  0-808-189-0504</li>
+  <!--<li id="FR">FRA: 0800-909-816</li>
+  <li id="GR">GER: 0800-183-3953</li> -->
+</ul>
+  </div>
+  
+  <!-- Web Callback 
+  <div class="dropdown" style="float:right;padding-right:15px;">
+  <a href="#test-popup" class="open-popup-link" id="callback_link">Give you a callback?</a> 
+  </div>
+  <!--end of  Web Callback -->
+  
+<div class = "chatlink" id="OhSnap" style="display:none">
+<a class="dropdown" id="chat" onclick="SnapEngage.openProactiveChat(true, true);">Live Chat</a>
+</div>
+</div>
+
+<div id="sidescroll-container">
+  <div class="binder">
+    <div class="slider" style="display:none;">
+      <div id="start" class="additional-block">
+        <ul class="menu">
+          <li><a href="#manage">Managing Your Files</a></li>
+          <li><a href="#collaborate">Collaboration and Sharing</a></li>
+          <li><a href="#sync">Box Sync</a></li>
+          <li><a href="#mobile">Box Mobile Apps</a></li>
+          <li><a href="#admins">For Admins</a></li>
+          <li><a href="#industry">Box for Your Industry</a></li>
+          <li><a href="#account">Account Information</a></li>
+          <li><a href="#setup">Setup and Deployment</a></li>
+          <li><a href="#billing">Payment and Billing</a></li>
+          <!--<li><a href="#issues">Known Issues and Updates</a></li>-->
+           <li><a href="#about">About Box</a></li>
+        </ul>
+        <div class="header">
+        </div>
+      </div>
+      <div id="manage" class="additional-block">
+        <ul class="menu">
+          <li><a href="" data-articles="/sections/200163993-Uploading-and-Downloading-Files">Uploading and Downloading Files</a></li>
+          <li><a href="" data-articles="/sections/200164013-Creating-Files-and-Folders">Creating Files and Folders</a></li>
+          <li><a href="" data-articles="/sections/200144947-Deleting-and-Restoring-Files">Deleting and Restoring Files</a></li>
+          <li><a href="" data-articles="/sections/200159546-Previewing-Files">Previewing Files</a></li>
+          <li><a href="" data-articles="/sections/200159626-Box-Apps-and-Add-ons">Box Apps and Add-ons</a></li>
+          <li><a href="" data-articles="/sections/200164043-Partner-Apps-and-Services">Partner Apps and Services</a></li>
+        </ul>
+        <div class="header">
+        </div>
+      </div>
+      <div id="collaborate" class="additional-block">
+        <ul class="menu">
+          <li><a href="" data-articles="/sections/200143748-Using-Collaboration-and-Sharing">Using Collaboration and Sharing</a></li>
+          <li><a href="" data-articles="/sections/200142208-Collaborators">Managing Collaborators</a></li>
+          <li><a href="" data-articles="/sections/200144957-Tools">Using Sharing Tools</a></li>
+          <li><a href="" data-articles="/sections/200159566-Links">Sharing with Links</a></li>
+        </ul>
+        <div class="header">
+        </div>
+      </div>
+      <div id="sync" class="additional-block">
+        <ul class="menu">
+        <li><a href="" data-articles="/sections/200255743-Installing-Box-Sync">Installing Box Sync</a></li>
+        <li><a href="" data-articles="/sections/200144967-Setting-up-Sync-Folders">Setting up Sync Folders</a></li>
+          <li><a href="" data-articles="/sections/200234638-Using-Box-Sync-on-Desktops">Box Sync on your Desktop</a></li>
+          <li><a href="" data-articles="/sections/200143228-Using-Sync-on-Mobile-Devices">Box Sync on Mobile Devices</a></li>
+          <li><a href="" data-articles="/sections/200249326-Box-Sync-3-x">Box Sync 3.x</a></li>
+          <li><a href="" data-articles="/sections/200142218-Box-Sync-4-0">Box Sync 4.0</a></li>
+          <li><a href="" data-articles="/sections/200230573-Troubleshooting-for-Box-Sync">Troubleshooting Box Sync</a></li>
+        </ul>
+        <div class="header">
+        </div>
+      </div>
+      <div id="mobile" class="additional-block">
+        <ul class="menu">
+          <li><a href="" data-articles="/sections/200225083-Box-for-iOS">Box for iOS</a></li>
+          <li><a href="" data-articles="/sections/200199338-Box-for-Android">Box for Android</a></li>
+          <li><a href="" data-articles="/sections/200199348-Box-for-Windows-">Box for Windows</a></li>
+          <li><a href="" data-articles="/sections/200141398-Box-for-Blackberry">Box for Blackberry</a></li> 
+        </ul>
+        <div class="header">
+        </div>
+      </div>
+      <div id="admins" class="additional-block">
+        <ul class="menu">
+          <li><a href="" data-articles="/sections/200142258-Managing-your-Settings">Managing Your Settings</a></li>
+          <li><a href="" data-articles="/sections/200142248-Managing-Files-and-Folders">Managing Files and Folders</a></li>
+          <li><a href="" data-articles="/sections/200159636-Managing-Users-">Managing Users</a></li>
+          <li><a href="" data-articles="/sections/200142268-Adding-Licenses">Adding Licenses</a></li>
+          <li><a href="" data-articles="/sections/200159646-Reporting">Reporting</a></li>
+          <li><a href="" data-articles="/sections/200159656-Security">Security</a></li>
+        </ul>
+        <div class="header">
+        </div>
+      </div>
+      <div id="industry" class="additional-block">
+        <ul class="menu">
+          <li><a href="" data-articles="/sections/200184496-Box-for-Meetings">Box for Meetings</a></li>
+          <li><a href="" data-articles="/sections/200184486-Box-for-Design-Teams">Box for Design Teams</a></li>
+          <li><a href="" data-articles="/sections/200189623-Box-for-Sales">Box for Sales</a></li>
+          <li><a href="" data-articles="/sections/200184466-Box-for-HR">Box for HR</a></li>
+          <li><a href="" data-articles="/sections/200165997-Box-for-Content-Submissions">Box for Content Submissions</a></li>
+          <li><a href="" data-articles="/sections/200165957-Box-for-Architecture-Construction-and-Engineering">Box for Construction</a></li>
+          <li><a href="" data-articles="/sections/200165267-Box-for-Advertising">Box for Advertising</a></li>
+          <li><a href="" data-articles="/sections/200164358-Box-for-Personal-Drives">Box for Personal Workspaces</a></li>
+          <li><a href="" data-articles="/categories/200067913-Box-for-Your-Industry">More Industry Use Cases</a></li>
+        </ul> 
+        <div class="header">
+        </div>
+      </div>
+      <div id="account" class="additional-block">
+        <ul class="menu">     
+          <li><a href="" data-articles="/sections/200143708-Managing-your-Settings">Modifying your Settings</a></li> 
+          <li><a href="" data-articles="/sections/200145007-Upgrading-your-Account">Upgrading your Account</a></li>
+          <li><a href="" data-articles="/sections/200145017-Downgrading-your-Account">Downgrading your Account</a></li>
+          <li><a href="" data-articles="/sections/200159676-Notification-Settings">Notification Settings</a></li>        
+          <li><a href="" data-articles="/sections/200164063-Your-Login-Information">Your Login Information</a></li>
+          <li><a href="" data-articles="/sections/200164143-Deleting-or-Canceling-your-Account">Canceling your Account</a></li>
+        </ul>
+        <div class="header">
+        </div>
+      </div>
+      <div id="setup" class="additional-block">
+        <ul class="menu">
+          <li><a href="" data-articles="/sections/200144408-Getting-Started">Getting Started</a></li>
+          <li><a href="" data-articles="/sections/200159756-Implementation">Implementation</a></li>
+          <li><a href="" data-articles="/sections/200231236-System-Requirements-and-Setup">System Requirements and Setup</a></li>
+        </ul> 
+        <div class="header">
+        </div>
+      </div>
+      <div id="billing" class="additional-block">
+        <ul class="menu">
+          <li><a href="" data-articles="/sections/200159796-Billing-Information">Billing Information</a></li>
+          <li><a href="" data-articles="/sections/200164163-Payments">Payments</a></li>
+        </ul>
+        <div class="header">
+        </div>
+      </div>
+      <div id="about" class="additional-block">
+        <ul class="menu">
+          <li><a href="" data-articles="/sections/200142788-Announcements-and-Updates">Announcements and Updates</a></li>
+        <li><a href="" data-articles="/sections/200141848-Box-Promotions">Box Promotions</a></li>
+          <li><a href="" data-articles="/sections/200159826-Supported-Platforms-and-Devices">Supported Platforms and Devices</a></li>
+          <li><a href="" data-articles="/sections/200142818-Compliance-Policies">Compliance Policies</a></li>
+           <li><a href="" data-articles="/sections/200141748-Partner-Portal">Partner Portal</a></li>
+          <li><a href="" data-articles="/sections/200167453-Contacting-Box-Support">Contacting Box Support</a></li>
+          
+        </ul> 
+        <div class="header">
+        </div>
+      </div>
+      <div id="issues" class="additional-block">
+        <ul class="menu">
+          <li><a href="" data-articles="/sections/200142788-Announcements-and-Updates">Announcements and Updates</a></li>
+        </ul>
+        <div class="header">
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+<!-- added new one to import salman js-->
+<script src='//p1.zdassets.com/hc/theme_assets/291474/200000713/phone_number_display.js'></script> 
+
+<script src='//p1.zdassets.com/hc/theme_assets/291474/200000713/snapengage.js'></script>
+
+<!------- Shaunak's Web Call back Code --------->
+
+<!-- Importing CSS and webcallback JS -->
+<link rel='stylesheet prefetch' href='//p1.zdassets.com/hc/theme_assets/88181/3416/magnific-popup.css'>
+<link rel='stylesheet prefetch' href='//p1.zdassets.com/hc/theme_assets/88181/3416/web-callback.css
+'>
+
+<script src='//p1.zdassets.com/hc/theme_assets/88181/3416/wcb-final6.js'></script> 
+<!-- Popup itself -->
+<div id="test-popup" class="white-popup mfp-hide">
+    <div id="callback_form">
+      <form > 
+      <img src="//p1.zdassets.com/hc/theme_assets/291474/200000713/Box-CS-HeadphonesCyan_small__1_.png"><br><br>
+      <span> <b>Name:</b><br><input type="text" name="fname" id="fname"/></span><br><br>
+      <span> <b>Email:</b><br><input type="text" name="email" id="email" /></span><br><br>   
+      <span><b> Phone Number:</b></span><br> <input type="text" name="called"  id="pnumber"/></span><br><br>
+      <span><b>Issue Type:</b></span><br>
+      <select id="issue">
+        <option value="web">Web App</option>
+        <option value="desktop">Desktop Application </option>
+        <option value="mobile">Mobile</option>
+        <option value="billing">Billing</option>
+      </select>  <br>
+      <br> <input type="button" value="Call me" onclick=validate_phone() class="button save" />
+    </form>
+  </div>
+  <div id="thank_you" style="display:none;">
+  <img src="//p1.zdassets.com/hc/theme_assets/291474/200000713/Box-CS-HeadphonesCyan_small__1_.png"><br><br>
+    <p id=title><b>We will call you in...</b> </p><span id="timer"></span><br>
+    <p> While you wait.. here is a fun <a href="http://web-callback.herokuapp.com/Tetris/index.html" target="_blank"> game</a></p>
+  </div>
+</div>
+<!-- JS for the popup window  -->
+<script src='//p1.zdassets.com/hc/theme_assets/291474/200000713/jquery.magnific-popup.min.js'></script>  
+<script src='//p1.zdassets.com/hc/theme_assets/88181/3416/popup.js'></script>
+<!-------------End of Shaunak's Web Call back Code --------------->
+
+
+
+
+
+  <main role="main">
+    <nav class="community-nav">
+  <ul>
+    <li>Topics</li>
+    <li><a href="/hc/communities/public/questions" title="Questions">Questions</a></li>
+    <li><a href="/hc/communities/public/questions/unanswered" title="Questions that have no upvoted answers">Open questions</a></li>
+    <li><a href="/hc/communities/public/questions/new" role="button">Post a question or idea</a></li>
+  </ul>
+</nav>
+
+
+<div class="clearfix">
+  <div class="main-column">
+
+    <nav class="community-sub-nav">
+      <ul>
+        <li>All</li>
+        
+      </ul>
+    </nav>
+
+      <ul class="topic-list">
+        <li class="topic">
+  <h3 class="topic-title"><a href="/hc/communities/public/topics/200003993-Best-Practices">Best Practices</a></h3>
+  <span class="topic-meta">
+    <span>0 questions</span>
+    <span>0 followers</span>
+  </span>
+</li>
+<li class="topic">
+  <h3 class="topic-title"><a href="/hc/communities/public/topics/200002173-Feature-Requests">Feature Requests</a></h3>
+  <span class="topic-meta">
+    <span>1 question</span>
+    <span>0 followers</span>
+  </span>
+</li>
+<li class="topic">
+  <h3 class="topic-title"><a href="/hc/communities/public/topics/200106178-General">General</a></h3>
+  <span class="topic-meta">
+    <span>0 questions</span>
+    <span>1 follower</span>
+  </span>
+</li>
+<li class="topic">
+  <h3 class="topic-title"><a href="/hc/communities/public/topics/200113253-Mobile">Mobile</a></h3>
+  <span class="topic-meta">
+    <span>0 questions</span>
+    <span>1 follower</span>
+  </span>
+</li>
+<li class="topic">
+  <h3 class="topic-title"><a href="/hc/communities/public/topics/200106188-Product-Updates">Product Updates</a></h3>
+  <span class="topic-meta">
+    <span>0 questions</span>
+    <span>1 follower</span>
+  </span>
+</li>
+<li class="topic">
+  <h3 class="topic-title"><a href="/hc/communities/public/topics/200002163-Questions">Questions</a></h3>
+  <span class="topic-meta">
+    <span>1 question</span>
+    <span>0 followers</span>
+  </span>
+</li>
+<li class="topic">
+  <h3 class="topic-title"><a href="/hc/communities/public/topics/200117476-Sync">Sync</a></h3>
+  <span class="topic-meta">
+    <span>0 questions</span>
+    <span>1 follower</span>
+  </span>
+</li>
+<li class="topic">
+  <h3 class="topic-title"><a href="/hc/communities/public/topics/200085396-Tip-of-the-Day">Tip of the Day</a></h3>
+  <span class="topic-meta">
+    <span>2 questions</span>
+    <span>0 followers</span>
+  </span>
+</li>
+
+      </ul>
+      
+  </div>
+</div>
+
+  </main>
+
+    <div class="clear"></div>
+<footer class="footer">
+  <div class="footer-inner">
+    <ul class="footer-list">
+      <li class="footer-item"><a class="footer-link" href="http://developers.box.com">Developer.box</a></li>
+      <li class="footer-item"><a class="footer-link" href="http://status.box.com/">Box Status</a></li>
+      <li class="footer-item"><a class="footer-link" href="https://github.com/box">Box Open Source Projects</a></li>
+      <li class="footer-item"><a class="footer-link" href="http://app.box.com/">Go to Box</a></li>
+      <li class="footer-item"><a class="footer-link" href="htttp://www.box.com">About Box</a></li>
+      <li class="footer-item"><a class="footer-link" href="https://app.box.com/legal_text/tos">Terms of Use</a></li>
+      <li class="footer-item"><a class="footer-link" href="http://app.box.com/legal_text/privacy_policy">Privacy Policy</a></li>
+      <li class="footer-item"><a class="footer-link"><a href="/hc/requests/new?community_id=public" class="submit-a-request">Submit a request</a></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="//p1.zdassets.com/hc/theme_assets/291474/200000713/box-help-v9.js"></script>
+
+<script src="//p1.zdassets.com/hc/theme_assets/291474/200000713/jquery.js"></script>
+
+  <!-- / -->
+  
+
+  <script src="/hc/locales-476a536b2a02f7703be5ec5c0430693dfaccd96a.js?community_id=public&amp;locale=en-us" type="text/javascript"></script>
+  <script type="text/javascript">
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"box1367876785","environment":"production","name":"Box Support Sandbox"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/images/frame_user.png","organizations":[],"groups":[]};
+  HelpCenter.current_session = {"locale":"en-us","csrf_token":"CKZ3PfNvT40dNBK3GT4hW/9ICTLKL0nX4EvjCavERTw=","shared_csrf_token":null};
+  HelpCenter.settings = {"zopim_enabled":false};
+  HelpCenter.sso = {"enabled":false,"action":null,"return_to":"https://box1367876785.zendesk.com/hc?community_id=public","auth_domain":"https://box1367876785.zendesk.com"};
+</script>
+
+  <script data-modules="pages/enduser/common" id="zendesk-js" src="//p1.zdassets.com/hc/assets/hc_enduser-a1ed59aa44fe1e6b36bd2c22cb03eda0.js" type="text/javascript"></script>
+  
+
+  
+</body>
+</html>
